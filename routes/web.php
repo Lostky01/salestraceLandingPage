@@ -20,3 +20,6 @@ use App\Models\Helper;
 Route::get('/contactus', function () {
     return view('contactus');
 });
+Route::get('/price', function () {
+    return view('price');
+});

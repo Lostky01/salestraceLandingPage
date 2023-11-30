@@ -3,13 +3,14 @@
 @section('css-after')
     <style>
         .atas {
-            background-image: url('{{ asset('bgatas.png') }}');
+            background-image: url('{{ asset('contact-asset/bgatas.png') }}');
             background-size: cover;
         }
 
         .colkedua {
-            background-image: url('{{ asset('cewe.png') }}');
+            background-image: url('{{ asset('contact-asset/cewe.png') }}');
             background-size:cover;
+            height:100%;
         }
     </style>
 @endsection
@@ -29,10 +30,10 @@
         <center>
             <p style="color: #000;font-size: 22px;font-weight: 700;">Beberapa partner kami</p>
         </center>
-        <center><img src="{{ asset('partnerkami.png') }}" alt=""></center>
+        <center><img src="{{ asset('contact-asset/partnerkami.png') }}" alt=""></center>
     </section>
     <section class="contact sales">
-        <div class="row d-flex">
+        <div class="row">
             <div class="col-lg-6" style="padding:7%; background-color:#1E3168;">
                 <h1 style="color: #FFF;font-size: 35px;font-weight: 700;">Dengan siapa Anda perlu <br> menghubungi?</h1>
                 <p style="color: #FFF;font-size: 15px;font-weight: 400;">Selain Anda akan mendapatkan keuntungan sebagai
@@ -40,7 +41,7 @@
                     diskon Rp 250.000 untuk paket berlangganan pertama <br> mereka.</p>
                 <a href="#" class="btn btn-primary"
                     style="background-color: #1E3168; font-size:15px; border-color: #ffffff; color: #ffffff; border-radius: 5px; width:35vh"><img
-                        src="{{ asset('wa-icon.png') }}" alt=""> Whatsapp Sales</a>
+                        src="{{ asset('contact-asset/wa-icon.png') }}" alt=""> Whatsapp Sales</a>
             </div>
             <div class="col-lg-6 colkedua" style="height: 70vh"></div>
         </div>

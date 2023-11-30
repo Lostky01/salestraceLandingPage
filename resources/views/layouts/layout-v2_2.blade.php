@@ -130,7 +130,7 @@ $baseurl = 'https://omsetku-dev.globaldeva.com/';
 
     b,
     a,
-    strong,label {
+    strong {
 
       font-family: 'Roboto', sans-serif !important;
 
