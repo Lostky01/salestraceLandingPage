@@ -2,12 +2,52 @@
 
 @section('css-after')
     <style>
+        :root {
+            --base-font-size: 16px;
+            /* Set your base font size */
+        }
+
+        body {
+            font-size: var(--base-font-size);
+            /* Set the default font size */
+        }
+
         .atas {
             background-image: url('{{ asset('price-asset/bgatas.png') }}');
             background-size: cover;
         }
+
         section {
             background-color: white !important;
+        }
+
+        @media screen and (max-width: 720px) {
+            body {
+                font-size: calc(var(--base-font-size) - 10px);
+            }
+
+            p {
+                font-size: calc(var(--base-font-size) - 10px);
+            }
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-size: calc(var(--base-font-size) - 10px);
+            }
+        }
+
+        .col-lg-6 img {
+            padding-left: 15%;
+        }
+
+        @media screen and (max-width:720px) {
+            .col-lg-6 img {
+                padding-left: 0%;
+            }
         }
     </style>
 @endsection
@@ -27,19 +67,21 @@
                     dengan <br> kebutuhan Anda.</p>
             </center>
         </div>
-        <div class="col-lg-12 position-sticky">
+        <div class="col-lg-12">
             <div class="row justify-content-center">
-                <div class="col-2">
+                <div class="col-2 text-right">
                     <center>
-                        <button type="button" class="btn btn-primary"
-                            style="padding-top:15px !important;padding-left:30px;padding-right:30px;padding-bottom:15px; background-color: #FFF; color: #000; font-size: 18px; font-weight: 700; border-color: #ffffff; height:auto; width:auto; border-radius: 5px;">Coba
-                            Gratis</button>
+                        <a href="{{ url('contactus') }}">
+                            <img src="{{ asset('price-asset/Link.png') }}" alt="">
+                        </a>
                     </center>
                 </div>
-                <div class="col-2">
-                    <button type="button" class="btn btn-primary"
-                        style="padding-top:15px; padding-left:30px;padding-right:30px; padding-bottom:15px; !important; background-color: rgba(0, 255, 255, 0); font-weight: 700; font-size: 18px; height:auto; width:auto; color: #FFF; border-color: #ffffff; color: #ffffff; border-radius: 5px;">
-                        Coba Demo</button>
+                <div class="col-2 text-right">
+                    <center>
+                        <a href="{{ url('contactus') }}">
+                            <img src="{{ asset('price-asset/coba2.png') }}" alt="">
+                        </a>
+                    </center>
                 </div>
             </div>
         </div>
@@ -59,10 +101,10 @@
                 keamanan aplikasi dalam satu platform <br> terbuka dan terpadu untuk terus memberikan jawaban tepat dan
                 otomatisasi cerdas dari data.</p>
         </center>
-        <div class="container">
+        <div class="container mt-5">
             <div class="row">
                 <div class="col-4">
-                    <div class="card" style="width: 25rem;height:100%;">
+                    <div class="card" style="width: 100%;height:100%;box-shadow: 0 8px 8px rgba(48, 47, 47, 0.1);">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-6">
@@ -101,7 +143,8 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="card" style="width: 25rem;height:65vh; background-color:#F4F9FA;">
+                    <div class="card"
+                        style="width: 100%;height:100%; background-color:#F4F9FA;box-shadow: 0 8px 8px rgba(48, 47, 47, 0.1);">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-6">
@@ -115,7 +158,8 @@
                                         per month <br>
                                         paid annually</p>
                                 </div>
-                                <p style="color: #3C3F40;font-size: 15px;font-weight: 400;">Rencana pertumbuhan kami yang paling <br>
+                                <p style="color: #3C3F40;font-size: 15px;font-weight: 400;">Rencana pertumbuhan kami yang
+                                    paling <br>
                                     populer bisnis mencakup otomatisasi alur <br>
                                     kerja dan integrasi dengan alat bantu Anda.</p>
                             </div>
@@ -125,7 +169,8 @@
                                     Free</a>
                                 <ul class="list-group list-group-flush mt-5" style="background-color:#F4F9FA;">
                                     <li class="list-group-item" style="background-color:#F4F9FA;"></li>
-                                    <li class="list-group-item mt-3" style="background-color:#F4F9FA;">Everything in Basic, plus:
+                                    <li class="list-group-item mt-3" style="background-color:#F4F9FA;">Everything in Basic,
+                                        plus:
                                         <ul style="gap: 16px; list-style: none; background-color:#F4F9FA;">
                                             <li class="mt-3">15,000 Contact limit</li>
                                             <li class="mt-3">Workflow automation</li>
@@ -140,7 +185,7 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="card" style="width: 25rem;height:65vh;">
+                    <div class="card" style="width: 100%;height:100%;box-shadow: 0 8px 8px rgba(48, 47, 47, 0.1);">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-6">
@@ -154,7 +199,8 @@
                                         per month <br>
                                         paid annually</p>
                                 </div>
-                                <p style="color: #3C3F40;font-size: 15px;font-weight: 400;">Jika Anda fokus pada penskalaan, gunakan <br>
+                                <p style="color: #3C3F40;font-size: 15px;font-weight: 400;">Jika Anda fokus pada penskalaan,
+                                    gunakan <br>
                                     CRM selangkah lebih maju dengan kontak tak <br>
                                     terbatas, alat pemasaran dan penyesuaian.</p>
                             </div>
@@ -186,7 +232,10 @@
             <div class="col-lg-6" style="padding:10%">
                 <h1 style="color: #1E3168;font-size: 40px;font-weight: 700;">Omsetku Digital</h1>
                 <h2 style="color: #1E3168;font-size: 30px;font-weight: 700;">Jasa improve engagement bisnis anda</h2>
-                <p style="color: #000;font-size: 18px;font-weight: 400;">We earn the trust of our customers, employees, and <br> extended family through transparency, security, compliance, <br> privacy, and performance. And we deliver the industry’s most <br> trusted infrastructure.</p>
+                <p style="color: #000;font-size: 18px;font-weight: 400;">We earn the trust of our customers, employees, and
+                    <br> extended family through transparency, security, compliance, <br> privacy, and performance. And we
+                    deliver the industry’s most <br> trusted infrastructure.
+                </p>
             </div>
             <div class="col-lg-6" style="padding:5%">
                 <img src="{{ asset('price-asset/igmanagement.png') }}" alt="">
@@ -194,87 +243,146 @@
         </div>
     </section>
     <section class="membantu pelanggan sukses">
-        <center><h1 style="color: #000;font-size: 40px;font-weight: 700;">Membantu pelanggan sukses. Itu urusan Omsetku.</h1></center>
-        <center><p style="color: #000;font-size: 18px;font-weight: 400;">Para pendiri kami meluncurkan model 1-1-1, yang memberikan 1% dari ekuitas, teknologi, dan waktu <br> masyarakat kami untuk meningkatkan pendidikan, kesetaraan, dan lingkungan bagi semua orang. Saat ini, <br> lebih dari 17.000 perusahaan di seluruh dunia telah bergabung dengan kami dalam gerakan Pledge 1%.</p></center>
+        <center>
+            <h1 style="color: #000;font-size: 40px;font-weight: 700;">Membantu pelanggan sukses. Itu urusan Omsetku.</h1>
+        </center>
+        <center>
+            <p style="color: #000;font-size: 18px;font-weight: 400;">Para pendiri kami meluncurkan model 1-1-1, yang
+                memberikan 1% dari ekuitas, teknologi, dan waktu <br> masyarakat kami untuk meningkatkan pendidikan,
+                kesetaraan, dan lingkungan bagi semua orang. Saat ini, <br> lebih dari 17.000 perusahaan di seluruh dunia
+                telah bergabung dengan kami dalam gerakan Pledge 1%.</p>
+        </center>
         <div class="row">
             <div class="col-lg-6" style="padding:5%">
                 <img src="{{ asset('price-asset/orangsukses.png') }}" alt="">
             </div>
             <div class="col-lg-6" style="padding-top:10%">
-                <h2 style="color: #1E3168;font-size: 30px;font-weight: 700;">Apa keuntungan program enterprise <br> omsetku untuk rekanbisnis anda?</h2>
-                <p style="color: #000;font-size: 18px;font-weight: 400;">Selain Anda akan mendapat keuntungan sebagai <br> Member Enterprise Omsetku, rekan bisnis Anda yang diajak <br> berlangganan juga akan mendapat potongan Rp 250.000 <br> untuk paket langganan pertama mereka.</p>
+                <h2 style="color: #1E3168;font-size: 30px;font-weight: 700;">Apa keuntungan program enterprise <br> omsetku
+                    untuk rekanbisnis anda?</h2>
+                <p style="color: #000;font-size: 18px;font-weight: 400;">Selain Anda akan mendapat keuntungan sebagai <br>
+                    Member Enterprise Omsetku, rekan bisnis Anda yang diajak <br> berlangganan juga akan mendapat potongan
+                    Rp 250.000 <br> untuk paket langganan pertama mereka.</p>
             </div>
         </div>
     </section>
     <section class="value omsetku">
-        <center><h1 style="color: #000;font-weight: 700;font-size: 40px;">Value yang omsetku berikan buat kamu</h1></center>
-        <center><p style="color: #000;font-size: 18px;font-weight: 400;">Kemudahan dan kenyamanan dalam penggunaan produk melalui layanan <br>
-            purna jual yang terbaik dan terlengkap di kelasnya.</p></center>
-            <div class="row justify-content-center" style="padding:5%">
-                <div class="col-3">
-                    <center><img src="{{ asset('price-asset/headset.png') }}" alt=""></center>
-                    <center><h2 style="color: #7F1AFF;font-size: 16px;font-weight: 800;">CUSTOMER SERVICE</h2></center>
-                    <center><p style="color: #000;font-size: 17px;font-weight: 400;">Tim support yang responsif & selalu <br> siap memberikan solusi untuk <br> masalah Anda.</p></center>
-                </div>
-                <div class="col-3">
-                    <center><img src="{{ asset('price-asset/lampu.png') }}" alt=""></center>
-                    <center><h2 style="color: #1966FF;font-size: 16px;font-weight: 800;">IMPLEMENTASI</h2></center>
-                    <center><p style="color: #000;font-size: 17px;font-weight: 400;">Implementasi dan pelatihan <br> produk oleh tim spesialis <br> Goodeva secara gratis.</p></center>
-                </div>
-                <div class="col-3">
-                    <center><img src="{{ asset('price-asset/security.png') }}" alt=""></center>
-                    <center><h2 style="color: #00ABB6;font-size: 16px;font-weight: 800;">ACCOUNT MANAGER</h2></center>
-                    <center><p style="color: #000;font-size: 17px;font-weight: 400;">Konsultasi solusi bisnis secara <br> personal bersama account <br> manager Goodeva.</p></center>
-                </div>
-                <div class="col-3">
-                    <center><img src="{{ asset('price-asset/3hijau.png') }}" alt=""></center>
-                    <center><h2 style="color: #02D394;font-size: 16px;font-weight: 800;">KNOWLEDGE CENTER</h2></center>
-                    <center><p style="color: #000;font-size: 17px;font-weight: 400;">Panduan produk Goodeva <br> yang lengkap dan tersedia <br> dalam berbagai format.</p></center>    
-                </div>    
-            </div>   
+        <center>
+            <h1 style="color: #000;font-weight: 700;font-size: 40px;">Value yang omsetku berikan buat kamu</h1>
+        </center>
+        <center>
+            <p style="color: #000;font-size: 18px;font-weight: 400;">Kemudahan dan kenyamanan dalam penggunaan produk
+                melalui layanan <br>
+                purna jual yang terbaik dan terlengkap di kelasnya.</p>
+        </center>
+        <div class="row justify-content-center" style="padding:5%">
+            <div class="col-3">
+                <center><img src="{{ asset('price-asset/headset.png') }}" alt=""></center>
+                <center>
+                    <h2 style="color: #7F1AFF;font-size: 16px;font-weight: 800;">CUSTOMER SERVICE</h2>
+                </center>
+                <center>
+                    <p style="color: #000;font-size: 17px;font-weight: 400;">Tim support yang responsif & selalu <br> siap
+                        memberikan solusi untuk <br> masalah Anda.</p>
+                </center>
+            </div>
+            <div class="col-3">
+                <center><img src="{{ asset('price-asset/lampu.png') }}" alt=""></center>
+                <center>
+                    <h2 style="color: #1966FF;font-size: 16px;font-weight: 800;">IMPLEMENTASI</h2>
+                </center>
+                <center>
+                    <p style="color: #000;font-size: 17px;font-weight: 400;">Implementasi dan pelatihan <br> produk oleh
+                        tim spesialis <br> Goodeva secara gratis.</p>
+                </center>
+            </div>
+            <div class="col-3">
+                <center><img src="{{ asset('price-asset/security.png') }}" alt=""></center>
+                <center>
+                    <h2 style="color: #00ABB6;font-size: 16px;font-weight: 800;">ACCOUNT MANAGER</h2>
+                </center>
+                <center>
+                    <p style="color: #000;font-size: 17px;font-weight: 400;">Konsultasi solusi bisnis secara <br> personal
+                        bersama account <br> manager Goodeva.</p>
+                </center>
+            </div>
+            <div class="col-3">
+                <center><img src="{{ asset('price-asset/3hijau.png') }}" alt=""></center>
+                <center>
+                    <h2 style="color: #02D394;font-size: 16px;font-weight: 800;">KNOWLEDGE CENTER</h2>
+                </center>
+                <center>
+                    <p style="color: #000;font-size: 17px;font-weight: 400;">Panduan produk Goodeva <br> yang lengkap dan
+                        tersedia <br> dalam berbagai format.</p>
+                </center>
+            </div>
+        </div>
     </section>
     <section class="fitur unggulan omsetku">
-        <center><h1 style="color: #000;font-size: 40px;font-weight: 700;">Fitur unggulan pada Omsetku</h1></center>
-        <center><p style="color: #000;font-size: 18px;font-weight: 400;">Nilai-nilai inti kita memandu segala sesuatu yang kita lakukan sebagai perusahaan dan sebagai <br> manusia. Kami berusaha untuk memberikan yang terbaik dari satu sama lain, memberikan <br> kesuksesan kepada pelanggan kami, dan menginspirasi seluruh industri melalui tindakan kami.</p></center>
+        <center>
+            <h1 style="color: #000;font-size: 40px;font-weight: 700;">Fitur unggulan pada Omsetku</h1>
+        </center>
+        <center>
+            <p style="color: #000;font-size: 18px;font-weight: 400;">Nilai-nilai inti kita memandu segala sesuatu yang kita
+                lakukan sebagai perusahaan dan sebagai <br> manusia. Kami berusaha untuk memberikan yang terbaik dari satu
+                sama lain, memberikan <br> kesuksesan kepada pelanggan kami, dan menginspirasi seluruh industri melalui
+                tindakan kami.</p>
+        </center>
         <div class="row">
-            <div class="col-lg-6" style="padding-top:5%;padding-left:15%">
+            <div class="col-lg-6" style="padding-top:5%;position:static">
                 <img src="{{ asset('price-asset/cewe1.png') }}" alt="">
             </div>
             <div class="col-lg-6" style="padding-top:15%">
                 <h1 style="color: #1E3168;font-size: 40px;font-weight: 700;">Target Penjualan</h1>
                 <h2 style="color: #1E3168;font-weight: 700;font-size: 30px;">Pantau target bulanan hingga tahunan</h2>
-                <p style="color: #000;font-size: 18px;font-weight: 400;">We earn the trust of our customers, employees, and <br> extended family through transparency, security, compliance, <br> privacy, and performance. And we deliver the industry’s most <br> trusted infrastructure.</p>
+                <p style="color: #000;font-size: 18px;font-weight: 400;">We earn the trust of our customers, employees, and
+                    <br> extended family through transparency, security, compliance, <br> privacy, and performance. And we
+                    deliver the industry’s most <br> trusted infrastructure.
+                </p>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-6" style="padding-top:15%;padding-left:15%">
                 <h1 style="color: #1E3168;font-size: 40px;font-weight: 700;">Detail Pelanggan</h1>
                 <h2 style="color: #1E3168;font-weight: 700;font-size: 30px;">Semua data pelanggan tersusun rapih.</h2>
-                <p style="color: #000;font-size: 18px;font-weight: 400;">So we champion them to achieve extraordinary things. We <br> innovate and expand our business offerings to provide all <br> our stakeholders with new avenues to achieve ever greater <br> success.</p>
+                <p style="color: #000;font-size: 18px;font-weight: 400;">So we champion them to achieve extraordinary
+                    things. We <br> innovate and expand our business offerings to provide all <br> our stakeholders with new
+                    avenues to achieve ever greater <br> success.</p>
             </div>
-            <div class="col-lg-6" style="padding-top:10%;padding-left:5%">
+            <div class="col-lg-6" style="padding-top:10%;">
                 <img src="{{ asset('price-asset/cewe2.png') }}" alt="">
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-6" style="padding-top:5%;padding-left:15%">
+            <div class="col-lg-6" style="padding-top:5%;">
                 <img src="{{ asset('price-asset/cewe3.png') }}" alt="">
             </div>
             <div class="col-lg-6" style="padding-top:10%">
                 <h1 style="color: #1E3168;font-size: 40px;font-weight: 700;">Komisi Penjualan</h1>
                 <h2 style="color: #1E3168;font-weight: 700;font-size: 30px;">Tingkatkan kinerja sales dengan komisi</h2>
-                <p style="color: #000;font-size: 18px;font-weight: 400;">Our customers’ input helps us develop products that best <br> serve their business needs. Providing continual technology <br> releases and new initiatives gives our customers a <br> competitive advantage.</p>
+                <p style="color: #000;font-size: 18px;font-weight: 400;">Our customers’ input helps us develop products
+                    that best <br> serve their business needs. Providing continual technology <br> releases and new
+                    initiatives gives our customers a <br> competitive advantage.</p>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-6" style="padding-top:15%;padding-left:15%">
                 <h1 style="color: #1E3168;font-size: 40px;font-weight: 700;">Expense</h1>
-                <h2 style="color: #1E3168;font-weight: 700;font-size: 30px;">Pantau dan hitung semua pengeluaran <br> anti salah</h2>
-                <p style="color: #000;font-size: 18px;font-weight: 400;">We are committed to bringing the full power of Salesforce to  <br> accelerate the world’s journey to net zero.</p>
+                <h2 style="color: #1E3168;font-weight: 700;font-size: 30px;">Pantau dan hitung semua pengeluaran <br> anti
+                    salah</h2>
+                <p style="color: #000;font-size: 18px;font-weight: 400;">We are committed to bringing the full power of
+                    Salesforce to <br> accelerate the world’s journey to net zero.</p>
             </div>
-            <div class="col-lg-6" style="padding-top:10%;padding-left:5%">
+            <div class="col-lg-6" style="padding-top:10%;">
                 <img src="{{ asset('price-asset/cewe4.png') }}" alt="">
             </div>
         </div>
     </section>
+@endsection
+
+@section('script-after')
+    <script>
+        function OpenHome() {
+            window.location = "{{ url('contactus') }}";
+        }
+    </script>
 @endsection

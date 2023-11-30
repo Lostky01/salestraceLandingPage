@@ -39,7 +39,7 @@
                 <p style="color: #FFF;font-size: 15px;font-weight: 400;">Selain Anda akan mendapatkan keuntungan sebagai
                     Member Referral <br> Omsetku, rekan bisnis Anda yang diajak berlangganan juga akan <br> mendapatkan
                     diskon Rp 250.000 untuk paket berlangganan pertama <br> mereka.</p>
-                <a href="#" class="btn btn-primary"
+                <a href="{{ url('price') }}" class="btn btn-primary"
                     style="background-color: #1E3168; font-size:15px; border-color: #ffffff; color: #ffffff; border-radius: 5px; width:35vh"><img
                         src="{{ asset('contact-asset/wa-icon.png') }}" alt=""> Whatsapp Sales</a>
             </div>
