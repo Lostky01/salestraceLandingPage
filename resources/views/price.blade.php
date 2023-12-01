@@ -317,7 +317,7 @@
                 <div class="col-lg-6" style="padding-top:10%">
                     <h2 style="color: #1E3168;font-size: 30px;font-weight: 700;">Apa keuntungan program enterprise <br>
                         omsetku
-                        untuk rekanbisnis anda?</h2>
+                        untuk rekan bisnis anda?</h2>
                     <p style="color: #000;font-size: 18px;font-weight: 400;">Selain Anda akan mendapat keuntungan sebagai
                         <br>
                         Member Enterprise Omsetku, rekan bisnis Anda yang diajak <br> berlangganan juga akan mendapat
