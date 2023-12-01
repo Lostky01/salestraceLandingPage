@@ -23,3 +23,28 @@ Route::get('/contactus', function () {
 Route::get('/price', function () {
     return view('price');
 });
+Route::get('/inv', function () {
+    return view('data_invonce');
+});
+Route::get('/budget', function () {
+    return view('data_budgeting');
+});
+Route::get('/grp', function () {
+    return view('data_groupsales');
+});
+Route::get('/tgt', function () {
+    return view('data_targetsales');
+});
+Route::get('/kom', function () {
+    return view('data_komisi');
+});
+Route::get('/reim', function () {
+    return view('data_reimburse');
+});
+
+Route::get('/about', function () {
+    return view('about-V2_2');
+});
+
+// Route::get('/home', [OmsetkuV2Controller::class, 'indexV2_2']);
+Route::get('/about', [OmsetkuV2Controller::class, 'indexV2_2']);

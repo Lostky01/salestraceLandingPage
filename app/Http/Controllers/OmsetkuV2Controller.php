@@ -311,7 +311,7 @@ class OmsetkuV2Controller extends Controller
         "img" => "omsetku-dashboard.webp",
         "content" => [
           [
-            "title_content" => "Digital Quotation, Sales Order, & Invoice",
+            "title_content" => "Komisi Referral hingga Rp 5 juta",
             "describe_content" => "Making professional business quotations, sales orders & invoices can be done easily just through the application so that sales can work optimally wherever and whenever.",
           ],
           [
@@ -417,32 +417,38 @@ class OmsetkuV2Controller extends Controller
 
       $banner = [
         // "title" => "Aplikasi Penjualan Sales #1 Bikin Quotation, SO, dan Invoice semudah pesan ojek online",
-        "title" => "Ribuan Sales dan Bisnis Telah Menggunakan Aplikasi Omsetku",
+        "title" => "Rekomendasikan Omsetku, dapatkan passive",
+        "title2" => "income jutaan rupiah!",
         // "subtitle" => "Sekarang, Anda dapat makin mudah melaku mengatur dan memonitor kinerja sales dalam 1 Aplikasi",
-        "subtitle" => "Tingkatkan penjualan Anda dengan aplikasi Omsetku. <br> Download Omsetku sekarang gratis!",
+        "subtitle" => "Ajak mitra bisnismu untuk menggunakan Omsetku dan dapatkan penghasilan <br> tambahan mulai dari Rp 540.000 hingga Rp 5.000.000 per mitra!",
         // "img" => "phone - slider-min.png",
         "img" => "orang - banner-min.png",
         "btn_banner" => "btn-banner.png",
         "btn_coba" => "btn-coba.png",
+        "btn_coba_gratis" => "omsetku-gratis.png",
+        "btn_coba_demo" => "omsetku-demo2.png",
         "btn_res" => "btn-btn.png",
       ];
 
       $why_omsetku = [
-        "title" => "Selalu Curiga Sama Performa Sales Ingin Pantau Sales Auto Pilot? Coba Omsetku!",
-        "img" => "omsetku-dashboard.webp",
+        "title" => "Mengapa Anda Harus Bergabung Menjadi",
+        "title2" => "Anggota Omsetku Referal?",
+        "img" => "omsetku-mengapa2.png",
         "content" => [
           [
-            "title_content" => "Digital Quotation, Sales Order, & Invoice",
-            "describe_content" => "Membuat quotation, sales order & invoice profesional bisnis dapat dilakukan dengan mudah hanya lewat aplikasi sehingga sales dapat bekerja secara optimal dimanapun dan kapapun. ",
+            "title_content" => "Komisi Referral hingga Rp 5 juta",
+            "describe_content" => "Dapatkan komisi referral mulai dari Rp 540.000 hingga Rp 5.000.000 hanya dengan mengajak mitra bisnis Anda untuk berlangganan Omsetku.",
           ],
           [
-            "title_content" => "Real-time Access to Performance Report",
-            "describe_content" => "Laporan kinerja baik dari Lead, kinerja tim, hingga aktivitas kegiatan penjualan dapat dimonitor secara real-time. Data yang tersedia juga menampilkan grafik untuk mempermudah analisis kinerja indikator penjualan.",
-          ],
-          [
-            "title_content" => "Lead Scoring Temperature Market",
-            "describe_content" => "Informasi lead scoring temperature market untuk menentukan segmentasi audiens untuk memetakan target bisnis mu jadi lebih tepat. Follow up lebih akurat dan kesempatan closing penjualan meningkat.",
+            "title_content" => "Referral Bonus Hadiah",
+            "describe_content" => "Dapatkan tambahan reward dan penawaran menarik lainnya di Program Referral Omsetku.",
           ]
+        ],
+        "content_2" => [
+          [
+            "title_content" => "Apa saja kelebihan program afiliasi Omsetku bagi mitra bisnis Anda?",
+            "describe_content" => "Selain Anda akan mendapatkan keuntungan sebagai Member Referral Omsetku, rekan bisnis Anda yang diajak berlangganan juga akan mendapatkan diskon Rp 250.000 untuk paket berlangganan pertama mereka.",
+          ],
         ],
       ];
 
@@ -539,7 +545,7 @@ class OmsetkuV2Controller extends Controller
     // dd($data_content);
     // dd($service_detail);
 
-    return view('front-omsetku.home-v2_2', compact(
+    return view('front-omsetku.about-v2_2', compact(
       "banner",
       "why_omsetku",
       "when_omsetku",
